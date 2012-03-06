@@ -117,19 +117,26 @@ a{
 	position:absolute;
 	bottom:60px;
 	margin-left: 20px;
+	width:250px;
 }
 
 #sociales div{
-	margin:10px 0 0 5px;
-	font-weight: bold;
+	margin: 5px;
 }
 
-#sociales div img{
-	margin-right:8px;
+#sociales div a{
+	margin:10px 0 0 5px;
+	font-weight: bold;
+	
+	color:#663300;
+}
+
+#sociales div a img{
+	margin-right:3px;
 }
 
 #contenido{
-	margin-top:60px;
+	margin:60px 0 170px;
 	float:left;
 }
 
@@ -157,9 +164,4 @@ a{
 	font-size:80%;
 	width:100%;
 	line-height: 40px;
-}
-
-#mySlideShow{
-width: 800px !important;
-height: 600px !important;
 }

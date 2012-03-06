@@ -6,12 +6,12 @@
    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="author" content="Leo Molas" />
 	<title>Actividades Recreativas - Golfo Azul</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
     <script src="js/mootools.release.83.js" type="text/javascript"></script>
     <script src="js/timed.slideshow.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/jd.slideshow.css" type="text/css" media="screen" />
-
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
 </head>
 
 <body>
@@ -28,82 +28,76 @@
 				<div id="inincenter">
 					<div id="botonera">
 						<div class="boton">
-							<a href="hola">
-								¿Quiénes somos?
-							</a>
+							<a href="#">¿Quiénes somos?</a>
 						</div>
 						<div class="boton">
-							<a href="hola">
-								Excursiones
-							</a>
+							<a href="#">Excursiones</a>
 						</div>
 						<div class="boton">
-							<a href="hola">
-								Fotos
-							</a>
+							<a href="#">Fotos</a>
 						</div>
 						<div class="boton">
-							<a href="hola">
-								¿Cómo llegar?
-							</a>
+							<a href="#">¿Cómo llegar?</a>
 						</div>
 						<div class="boton">
-							<a href="hola">
-								Contacto
-							</a>
+							<a href="#">Contacto</a>
 						</div>
 						<div id="pusher"></div>
 
 					</div>
-					
-						<div class="jdSlideshow" id="mySlideshow"></div>
+					<div id="contenido">
+						<div class="jdSlideshow" id="galeria"></div>
 						<script type="text/javascript">
-								countArticle = 0;
-								var mySlideData = new Array();
-								mySlideData[countArticle++] = new Array(
+							countArticle = 0;
+							var mySlideData = new Array();
+							mySlideData[countArticle++] = new Array(
 								'images/test/1.jpg',
 								'#',
 								'Item 1 Title',
 								'Item 1 Description'
-								);
-								mySlideData[countArticle++] = new Array(
+							);
+							mySlideData[countArticle++] = new Array(
 								'images/test/2.jpg',
 								'#',
 								'Item 2 Title',
 								'Item 2 Description'
-								);
-								mySlideData[countArticle++] = new Array(
+							);
+							mySlideData[countArticle++] = new Array(
 								'images/test/3-cropped.jpg',
 								'#',
 								'Item 3 Title',
 								'Item 3 Description'
-								);
-								mySlideData[countArticle++] = new Array(
+							);
+							mySlideData[countArticle++] = new Array(
 								'images/test/4.jpg',
 								'#',
 								'Item 4 Title',
 								'Item 4 Description'
-								);
-								</script>
-								<script type="text/javascript">
-								function startSlideshow() {
-								var slideshow = new timedSlideShow($('mySlideshow'), mySlideData);
-								}
+							);
+							</script>
+							<script type="text/javascript">
+							function startSlideshow() {
+								var slideshow = new timedSlideShow($('galeria'), mySlideData);
+							}
 
-								addLoadEvent(startSlideshow);
-								</script>
-					
+							addLoadEvent(startSlideshow);
+						</script>
+					</div>
 					<div class="clear"></div>
 				</div>
 
 				<div id="sociales">
-					<div id="face">
-						<img src="img/face.png" alt="Facebook"/>
-						Seguinos en Facebook
+					<div>
+						<a href="#" id="face">
+							<img src="img/face.png" alt="Facebook"/>
+							Seguinos en Facebook
+						</a>
 					</div>
-					<div id="youtube">
-						<img src="img/youtube.png" alt="YouTube"/>
-						Visitá nuestro canal
+					<div>
+						<a href="#" id="youtube">
+							<img src="img/youtube.png" alt="YouTube"/>
+							Visitá nuestro canal
+						</a>
 					</div>
 				</div>
 				<div id="footer">
