@@ -5,7 +5,7 @@ html,body {
 
 body {
 	margin: 0px;
- 	background: url(../img/fondo4.gif); 
+ 	background: url(img/fondo4.gif); 
  	background-repeat: repeat; 
 	font-family: Verdana, Arial, sans-serif;
 }
@@ -15,7 +15,7 @@ body {
 	margin:auto;
 	max-width:1278px;
 	/*height:553px;*/
-	background: url(../img/degrade2.png);
+	background: url(img/degrade2.png);
 	background-position: right;
 	background-repeat: repeat-y;
 	min-height:100%;
@@ -28,7 +28,7 @@ body {
 }
 
 #center{
-	background: url(../img/fondo2.jpg);
+	background: url(img/fondo2.jpg);
 	bottom:0;
 	background-repeat: repeat-y;
 	top:0;
@@ -84,7 +84,7 @@ body {
 }
 
 .boton{
-	background:url(../img/boton4.png);
+	background:url(img/boton4.png);
 	width: 163px;
 	height: 35px;
 	margin-left:12px;
@@ -93,7 +93,7 @@ body {
 }
 
 .boton:hover{
-	background:url(../img/seleccionado2.png);
+	background:url(img/seleccionado2.png);
 }
 
 .boton a{
