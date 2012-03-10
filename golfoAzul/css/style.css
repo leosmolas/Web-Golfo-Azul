@@ -25,28 +25,29 @@ body {
 
 #header{
 	height:140px;	
+	z-index: 1;
+	overflow-y: visible;
+	position: relative
+	
 }
 
 #center{
 	background: url(img/fondo2.jpg);
 	bottom:0;
 	background-repeat: repeat-y;
-	top:0;
-	margin-top:140px;
+	top:140px;
+	position:absolute;
 	width:100%;
 	max-width:1278px;
-	position:fixed;
-	overflow-y: auto;
+	overflow-x: auto;
+	height: auto !important;
+	
 }
 
 #incenter{
 	position:relative;
 	bottom:0;
 	min-height:100%;
-}
-
-#hola{
-	position:absolute;
 }
 
 #inincenter{
@@ -63,12 +64,12 @@ body {
 	margin-top:12px;
 	z-index: 2;
 	overflow: visible;
-	position:fixed;
+	/*position:fixed;*/
 }
 
 #logoPusher{
 	visibility: hidden;
-	
+	display:none
 }
 
 #otroLogo{
@@ -82,7 +83,7 @@ body {
 	padding: 100px 10px 10px 20px;
 	position:absolute;
 	top:0;
-	bottom:9;
+	bottom:0;
 }
 
 .boton{
@@ -143,7 +144,7 @@ body {
 	position:absolute;
 	bottom:0;
 	color:#c0c0c0;
-	display:none;
+	
 }
 
 #footer div{
