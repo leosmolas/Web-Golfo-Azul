@@ -4,55 +4,88 @@ html,body {
 }
 
 body {
-	margin: 0px;
- 	background: url(img/fondo4.gif); 
- 	background-repeat: repeat; 
+	margin: 0px auto;
+
 	font-family: Verdana, Arial, sans-serif;
+	background-position: right;
+	
+		
+	min-height:100%;
+	height: auto !important;
+	position:relative;
+	
+	max-width:1278px;
+ 	background: url(img/fondo4.gif) fixed; 
+ 	
 }
 
 
 #main{
-	margin:auto;
-	max-width:1278px;
+
 	/*height:553px;*/
 	background: url(img/degrade2.png);
-	background-position: right;
-	background-repeat: repeat-y;
-	min-height:100%;
-	height: auto !important;
-	position:relative;
+
 }
+
+
 
 #header{
 	height:140px;	
 	z-index: 1;
 	overflow-y: visible;
-	position: relative
+	position: absolute;
+	top:0;
+	width:100%;
+	max-width:1278px;
+ 	background: url(img/fondo4.gif); 
+ 	background-repeat: repeat; 
+ 	background-attachment: fixed;
+ 	
 	
 }
 
+* html body{
+	overflow:hidden;
+} 
+
+@media screen{
+  body>div#header{
+   position: fixed;
+  }
+ }
+ 
+* html div#center{
+	height:100%;
+	overflow:auto;
+}
+
 #center{
-	background: url(img/fondo2.jpg);
+	/*background: url(img/fondo2.jpg);*/
 	bottom:0;
 	background-repeat: repeat-y;
 	top:140px;
 	position:absolute;
-	width:100%;
+	min-width:100%;
 	max-width:1278px;
-	overflow-x: auto;
-	height: auto !important;
+	/*overflow-x: auto;*/
+	/*height: auto !important;*/
+	
+	/*height:100%;*/
+	/*overflow:auto;*/
 	
 }
 
 #incenter{
 	position:relative;
-	bottom:0;
+	/*bottom:0;*/
 	min-height:100%;
+	background: url(img/fondo2.jpg);
+	background-repeat: repeat-y;
 }
 
 #inincenter{
 	overflow: hidden;
-	min-height: 100%;
+	min-height: 650px;
 }
 
 #pusher{
@@ -78,7 +111,6 @@ body {
 }
 
 #botonera{
-	float: left;
 	width:250px;
 	padding: 100px 10px 10px 20px;
 	position:absolute;
@@ -148,7 +180,6 @@ body {
 }
 
 #footer div{
-	margin:auto;
 	height: 100%;
 	text-align:center;
 	font-size:80%;
