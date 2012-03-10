@@ -6,9 +6,29 @@
    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="author" content="Leo Molas" />
 	<title>Actividades Recreativas - Golfo Azul</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/easySlider1.7.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/slider.css" media="screen" />
 	<!--link rel="shortcut icon" href="favicon.ico" /-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#slider").easySlider({
+				prevText: '<img id="boton-ant" alt="Sig" src="img/anterior.png"/>',
+				nextText: '<img id="boton-sig" alt="Sig" src="img/siguiente.png"/>',
+				auto: true,
+				continuous: true,
+				pause:4000,
+				speed:1200
+					
+			});
+			
+		});
+	$(document).ready(function(){
+    
+});
+	</script>
 </head>
 
 <body>
@@ -23,63 +43,81 @@
 		<div id="center">
 			<!--div id="barraTitulo"></div-->
 			<div id="incenter">
-				<!--div id="hola"-->
-					<div id="inincenter">
-						<div id="botonera">
-							<div class="boton">
+				<div id="inincenter">
+					<div id="botonera">
+						<div class="boton">
+							<a href="#">
+								¿Quiénes somos?
+							</a>
+						</div>
+						<div class="boton">
+							<a href="#">
+								Excursiones
+							</a>
+						</div>
+						<div class="boton">
+							<a href="#">
+								Fotos
+							</a>
+						</div>
+						<div class="boton">
+							<a href="#">
+								¿Cómo llegar?
+							</a>
+						</div>
+						<div class="boton">
+							<a href="#hola">
+								Contacto
+							</a>
+						</div>
+						<div id="sociales">
+							<div id="face">
 								<a href="#">
-									¿Quiénes somos?
+									<img src="img/face.gif" alt="Facebook"/>
+									Seguinos en Facebook
 								</a>
 							</div>
-							<div class="boton">
+							<div id="youtube">
 								<a href="#">
-									Excursiones
+									<img src="img/youtube.gif" alt="YouTube"/>
+									Visitá nuestro canal
 								</a>
 							</div>
-							<div class="boton">
-								<a href="#">
-									Fotos
-								</a>
-							</div>
-							<div class="boton">
-								<a href="#">
-									¿Cómo llegar?
-								</a>
-							</div>
-							<div class="boton">
-								<a href="#hola">
-									Contacto
-								</a>
-							</div>
-							<div id="sociales">
-								<div id="face">
-									<a href="#">
-										<img src="img/face.gif" alt="Facebook"/>
-										Seguinos en Facebook
-									</a>
-								</div>
-								<div id="youtube">
-									<a href="#">
-										<img src="img/youtube.gif" alt="YouTube"/>
-										Visitá nuestro canal
-									</a>
-								</div>
-							</div>
-							<!--div id="pusher"></div-->
+						</div>
+						<!--div id="pusher"></div-->
 
-						</div>
-						<div id="contenido">
-							Hola
-						</div>
-						<div class="clear"></div>
 					</div>
-				<!--/div-->
-
-				<div id="footer">
-					<div>Diseño y Programación Web: Luciana Lamas - Leo Molas</div>
+					<div id="contenido">
+						<div id="fotos">
+							<div id="slider">
+								<ul>
+									<li>
+										<img src="photos/1.jpg" alt="Camping en Chipauquil"/>
+										<p>Camping en Chipauquil</p>
+									</li>
+									<li>
+										<img src="photos/2.jpg" alt="Kayak por el Río Chubut"/>
+										<p>Kayak por el Río Chubut</p>
+									</li>
+									<li><img src="photos/3.jpg" alt="Tirolesa"/></li>
+									<li><img src="photos/4.jpg" alt="Rapel"/></li>
+									<li><img src="photos/5.jpg" alt="Caballos en el campo"/></li>
+									<li><img src="photos/6.jpg" alt="Cabalgatas"/></li>
+								</ul>
+							
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
 				</div>
+
+
+			</div>
+			<div id="footer">
+				<div>Diseño y Programación Web: Luciana Lamas - Leo Molas</div>
 			</div>
 		</div>
+
 
 	</div>
 

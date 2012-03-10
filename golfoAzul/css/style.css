@@ -80,7 +80,9 @@ body {
 	float: left;
 	width:250px;
 	padding: 100px 10px 10px 20px;
-	position:relative;
+	position:absolute;
+	top:0;
+	bottom:9;
 }
 
 .boton{
@@ -122,8 +124,9 @@ body {
 
 
 #contenido{
-	margin-top:60px;
-	float:left;
+	margin-top:100px;
+	overflow:hidden;
+	margin-left:280px;
 }
 
 .clear{
@@ -134,13 +137,13 @@ body {
 
 #footer{
 	height:40px;
-	background-color: #663300;
+	background-color:#663300;
 	width:100%;
 	max-width:1278px;
 	position:absolute;
 	bottom:0;
-	color: #c0c0c0;
-	
+	color:#c0c0c0;
+	display:none;
 }
 
 #footer div{
@@ -153,6 +156,6 @@ body {
 }
 
 a{
-	color:#663300;
+	color: #663300;
 	text-decoration: none;
 }
