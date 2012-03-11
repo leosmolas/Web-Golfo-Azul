@@ -44,6 +44,15 @@ body {
 	
 }
 
+#header div{
+	background: url(img/degrade2.png); 
+ 	background-repeat: repeat-y;
+ 	background-position:right;
+	height:140px;	
+	width:100%;
+	max-width:1278px;
+}
+
 * html body{
 	overflow:hidden;
 } 

@@ -23,101 +23,103 @@
 				speed:1200
 					
 			});
+			if ($("#logo").outerWidth() + ("#otroLogo").outerWidth() >= $("header").outerWidth()){
+				$("otroLogo").css("display", "none");
+			};
 			
 		});
-	$(document).ready(function(){
-    
-});
+
 	</script>
 </head>
 
 <body>
+	<div id="header">
+		<a href="/">
+			<img id="logo" src="img/iso3.png"></img>
+		</a>
+		<div>
 
-		<div id="header">
-			<a href="/">
-				<img id="logo" src="img/iso3.png"></img>
-			</a>
-			<img id="logoPusher" src="img/iso3.png"></img>
+			
 			<img id="otroLogo" src="img/actividades2.png"></img>
 		</div>
-		<div id="center">
-			<!--div id="barraTitulo"></div-->
-			<div id="incenter">
-				<div id="inincenter">
-					<div id="botonera">
-						<div class="boton">
+	</div>
+	<div id="center">
+		<div id="incenter">
+			<div id="inincenter">
+				<div id="botonera">
+					<div class="boton">
+						<a href="#">
+							¿Quiénes somos?
+						</a>
+					</div>
+					<div class="boton">
+						<a href="#">
+							Excursiones
+						</a>
+					</div>
+					<div class="boton">
+						<a href="#">
+							Fotos
+						</a>
+					</div>
+					<div class="boton">
+						<a href="#">
+							¿Cómo llegar?
+						</a>
+					</div>
+					<div class="boton">
+						<a href="#hola">
+							Contacto
+						</a>
+					</div>
+					<div id="sociales">
+						<div id="face">
 							<a href="#">
-								¿Quiénes somos?
+								<img src="img/face.gif" alt="Facebook"/>
+								Seguinos en Facebook
 							</a>
 						</div>
-						<div class="boton">
+						<div id="youtube">
 							<a href="#">
-								Excursiones
+								<img src="img/youtube.gif" alt="YouTube"/>
+								Visitá nuestro canal
 							</a>
 						</div>
-						<div class="boton">
-							<a href="#">
-								Fotos
-							</a>
-						</div>
-						<div class="boton">
-							<a href="#">
-								¿Cómo llegar?
-							</a>
-						</div>
-						<div class="boton">
-							<a href="#hola">
-								Contacto
-							</a>
-						</div>
-						<div id="sociales">
-							<div id="face">
-								<a href="#">
-									<img src="img/face.gif" alt="Facebook"/>
-									Seguinos en Facebook
-								</a>
-							</div>
-							<div id="youtube">
-								<a href="#">
-									<img src="img/youtube.gif" alt="YouTube"/>
-									Visitá nuestro canal
-								</a>
-							</div>
-						</div>
-						<!--div id="pusher"></div-->
+					</div>
+					<!--div id="pusher"></div-->
 
-					</div>
-					<div id="contenido">
-						<div id="fotos">
-							<div id="slider">
-								<ul>
-									<li>
-										<img src="photos/1.jpg" alt="Camping en Chipauquil"/>
-										<p>Camping en Chipauquil</p>
-									</li>
-									<li>
-										<img src="photos/2.jpg" alt="Kayak por el Río Chubut"/>
-										<p>Kayak por el Río Chubut</p>
-									</li>
-									<li><img src="photos/3.jpg" alt="Tirolesa"/></li>
-									<li><img src="photos/4.jpg" alt="Rapel"/></li>
-									<li><img src="photos/5.jpg" alt="Caballos en el campo"/></li>
-									<li><img src="photos/6.jpg" alt="Cabalgatas"/></li>
-								</ul>
-							
-							</div>
+				</div>
+				<div id="contenido">
+					<div id="fotos">
+						<div id="slider">
+							<ul>
+								<li>
+									<img src="photos/1.jpg" alt="Camping en Chipauquil"/>
+									<p>Camping en Chipauquil</p>
+								</li>
+								<li>
+									<img src="photos/2.jpg" alt="Kayak por el Río Chubut"/>
+									<p>Kayak por el Río Chubut</p>
+								</li>
+								<li><img src="photos/3.jpg" alt="Tirolesa"/></li>
+								<li><img src="photos/4.jpg" alt="Rapel"/></li>
+								<li><img src="photos/5.jpg" alt="Caballos en el campo"/></li>
+								<li><img src="photos/6.jpg" alt="Cabalgatas"/></li>
+							</ul>
+						
 						</div>
 					</div>
-					<div class="clear"></div>
 				</div>
-				
-				<div id="footer">
-					<div>Diseño y Programación Web: Luciana Lamas - Leo Molas</div>
-				</div>
+				<div class="clear"></div>
 			</div>
-
-
+			
+			<div id="footer">
+				<div>Diseño y Programación Web: Luciana Lamas - Leo Molas</div>
+			</div>
 		</div>
+
+
+	</div>
 
 
 
