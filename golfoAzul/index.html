@@ -6,7 +6,7 @@
    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="author" content="Leo Molas" />
 	<title>Actividades Recreativas - Golfo Azul</title>
-	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="js/easySlider1.7.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
@@ -15,18 +15,30 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("#slider").easySlider({
-				prevText: '<img id="boton-ant" alt="Sig" src="img/anterior.png"/>',
-				nextText: '<img id="boton-sig" alt="Sig" src="img/siguiente.png"/>',
+				prevText: '<img id="boton-ant" alt="Sig" src="img/anterior2.png"/>',
+				nextText: '<img id="boton-sig" alt="Sig" src="img/siguiente2.png"/>',
 				auto: true,
 				continuous: true,
 				pause:4000,
 				speed:1200
 					
 			});
-			if ($("#logo").outerWidth() + ("#otroLogo").outerWidth() >= $("header").outerWidth()){
-				$("otroLogo").css("display", "none");
+			console.log($("#logo").width(true), $("#otroLogo").width(true), $("#header").width(true))
+		  	if (($("#logo").outerWidth(true) + $("#otroLogo").outerWidth(true)) >= $("#header").outerWidth(true)){
+				$("#otroLogo").css("display", "none");
 			};
-			
+		});
+		$(window).resize(function() {
+			if ($("#otroLogo").css("visibility") == "hidden"){
+				if (($("#logo").outerWidth(true) + $("#otroLogo").outerWidth(true)) < $("#header").outerWidth(true)){
+					$("#otroLogo").css("visibility", "visible");
+				};
+			}
+			else{
+			  	if (($("#logo").outerWidth(true) + $("#otroLogo").outerWidth(true)) >= $("#header").outerWidth(true)){
+					$("#otroLogo").css("visibility", "hidden");
+				};
+			}
 		});
 
 	</script>
@@ -35,12 +47,12 @@
 <body>
 	<div id="header">
 		<a href="/">
-			<img id="logo" src="img/iso3.png"></img>
+			<img id="logo" src="img/logo.png"></img>
 		</a>
 		<div>
 
 			
-			<img id="otroLogo" src="img/actividades2.png"></img>
+			<img id="otroLogo" src="img/actividades3.png"></img>
 		</div>
 	</div>
 	<div id="center">

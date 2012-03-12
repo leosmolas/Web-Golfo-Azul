@@ -1,9 +1,9 @@
 #fotos{
 	position:relative;
-	margin: 0 100px;
+	margin: 0 auto;
 	width: 768px;
 	height: 441px;
-	background-image: url(img/fondo-fotos.png);
+	background-image: url(img/fondo-fotos2.png);
 	background-repeat: no-repeat;
 }
 
@@ -16,7 +16,7 @@
 }
 
 #slider{
-	margin: 0 68px;
+	margin: 0 54px;
 }
 
 #slider ul, #slider li{
@@ -25,16 +25,16 @@
 	list-style:none;
 	}
 #slider, #slider li{ 
-	width:640px;
-	height:480px;
+	width:512px;
+	height:384px;
 	overflow:hidden; 
 	
 }
 
 #slider li img{
-	height: 360px;
-	width: 640px;
-	margin-top: 30px;
+	height: 288px;
+	width: 512px;
+	margin-top: 24px;
 	overflow:hidden;
 		
 }
@@ -53,11 +53,12 @@ span#nextBtn{
 
 #slider li p{
 	 bottom: 8px;
-	 margin-top: 28px;
+	 margin-top: 22px;
 	 text-align: center;
 	 width:100%;
 	 left:0;
 	 color:#FFFFFF;
+	 font-size: 11px;
 }
 
 .hasFloats { 
