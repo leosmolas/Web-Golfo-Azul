@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="author" content="Leo Molas" />
+	<title>Actividades Recreativas - Golfo Azul</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/easySlider1.7.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/slider.css" media="screen" />
+	<!--link rel="shortcut icon" href="favicon.ico" /-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#slider").easySlider({
+				prevText: '<img id="boton-ant" alt="Sig" src="img/anterior.png"/>',
+				nextText: '<img id="boton-sig" alt="Sig" src="img/siguiente.png"/>',
+				auto: true,
+				continuous: true,
+				pause:4000,
+				speed:1200
+					
+			});
+			if ($("#logo").outerWidth() + ("#otroLogo").outerWidth() >= $("header").outerWidth()){
+				$("otroLogo").css("display", "none");
+			};
+			
+		});
+
+	</script>
+</head>
+
+<body>
+<div id="header">
+		<a href="/">
+			<img id="logo" src="img/logo.png"></img>
+		</a>
+		<div>
+
+			
+			<img id="otroLogo" src="img/actividades3.png"></img>
+		</div>
+	</div>
+	<div id="center">
+		<div id="incenter">
+			<div id="inincenter">
+				<div id="botonera">
+					<div class="boton">
+						<a href="#">
+							¿Quiénes somos?
+						</a>
+					</div>
+					<div class="boton">
+						<a href="#">
+							Excursiones
+						</a>
+					</div>
+					<div class="boton">
+						<a href="#">
+							Fotos
+						</a>
+					</div>
+					<div class="boton">
+						<a href="#">
+							¿Cómo llegar?
+						</a>
+					</div>
+					<div class="boton">
+						<a href="#hola">
+							Contacto
+						</a>
+					</div>
+					<div id="sociales">
+						<div id="face">
+							<a href="#">
+								<img src="img/face.gif" alt="Facebook"/>
+								Seguinos en Facebook
+							</a>
+						</div>
+						<div id="youtube">
+							<a href="#">
+								<img src="img/youtube.gif" alt="YouTube"/>
+								Visitá nuestro canal
+							</a>
+						</div>
+					</div>
+					<!--div id="pusher"></div-->
+
+				</div>
+				<div id="contenido">
+					<div id="texto">
+						<h1 id="first">Header One</h1>
+						
+						<p>Lorem ipsum <em>emphasised text</em> dolor sit amet, <strong>strong text</strong> 
+						consectetur adipisicing elit, <abbr title="">abbreviated text</abbr> sed do eiusmod tempor 
+						<acronym title="">acronym text</acronym> incididunt ut labore et dolore magna aliqua. Ut 
+						<q>quoted text</q> enim ad minim veniam, quis nostrud exercitation <a href="/">link text</a> 
+						ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute <del>deleted text</del> 
+						<ins>inserted text</ins> irure dolor in reprehenderit in voluptate velit esse cillum 
+						dolore eu fugiat nulla pariatur. Excepteur sint occaecat <code>code text</code> cupidatat 
+						non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						<blockquote>
+						<p>Blockquote. Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+						cupidatat non proident, sunt in culpa qui officia</p>
+						</blockquote>
+						
+						<p><cite><a href="/">Cite author with link text</a></cite>, 2008</p>
+						
+						<h2>Header 2</h2>
+						
+						<p>Extended paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+						occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						<ol>
+						<li>Ordered list</li>
+						<li>Item 2 Consectetur adipisicing elit</li>
+						<li>Item 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+						incididunt ut labore et dolore magna aliqua</li>
+						<li>Item 4</li>
+						<li>Item 5</li>
+						</ol>
+						
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+						anim id est laborum.</p>
+						
+						<h3>Header 3</h3>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+						ut labore et dolore magna aliqua.</p>
+						
+						<ul>
+						<li>Unordered list</li>
+						<li>Consectetur adipisicing elit</li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+						ut labore et dolore magna aliqua</li>
+						<li>Item</li>
+						<li>Item</li>
+						<li>Item</li>
+						</ul>
+						
+						<p>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+						ut labore et dolore magna aliqua.</p>
+	
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+						anim id est laborum.</p>
+						
+						<h4>Header 4</h4>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+						ut labore et dolore magna aliqua.</p>
+			
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+						ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<div id="footer">
+				<div>Diseño y Programación Web: Luciana Lamas - Leo Molas</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+</body>
+</html>

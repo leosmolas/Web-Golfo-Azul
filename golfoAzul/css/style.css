@@ -6,7 +6,7 @@ html,body {
 body {
 	margin: 0px auto;
 
-	font-family: Verdana, Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	background-position: right;
 	
 		
@@ -145,7 +145,7 @@ body {
 	display:block;
 	color:#FFFFFF;
 	padding: 10px 0px 10px 15px;
-	font-size: 10px;
+	font-size: 12px;
 }
 
 #sociales{
@@ -154,10 +154,6 @@ body {
 
 #sociales div{
 	margin:10px 0 0 5px;
-}
-
-#sociales div a {
-	font-size: 90%;
 }
 
 #sociales div a img{
@@ -170,6 +166,7 @@ body {
 	margin-top:75px;
 	overflow:hidden;
 	margin-left:210px;
+	margin-bottom:60px;
 }
 
 .clear{
@@ -192,12 +189,43 @@ body {
 #footer div{
 	height: 100%;
 	text-align:center;
-	font-size:80%;
+	font-size:90%;
 	width:100%;
 	line-height: 40px;
+}
+
+#texto{
+	margin: 0 auto;
+	max-width:750px;
 }
 
 a{
 	color: #663300;
 	text-decoration: none;
+}
+
+p{
+	font-size: 11pt;
+	line-height: 12.5pt;
+	text-align: justify;
+}
+
+h1,h2,h3{
+	margin:40px 0 10px;
+}
+
+h1{
+	font-size: 20pt;
+}
+
+h2{
+	font-size: 16pt;
+}
+
+h3{
+	font-size: 14pt;
+}
+
+#first{
+	margin-top: 0;
 }
